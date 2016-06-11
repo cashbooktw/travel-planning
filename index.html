@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
+    <input id="sec-input" class="controls" type="text" placeholder="Search Box">
+    <button id="ds" onclick="direction_service()">規劃!</button>
+    <!-- <input id="test" class="controls" type="text" placeholder="test"> -->
+    <!-- <script type="text/javascript">
+
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+
+    </script> -->
+    <script src="./script.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVxEx8ETVu25keXEs1QwUJKhgQWcv2Zhs&libraries=places&callback=initAutocomplete">
+    </script>
+  </body>
+</html>
